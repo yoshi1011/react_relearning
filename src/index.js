@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StateBasic from "./StateBasic";
+import SelectStyle from "./SelectStyle";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateBasic init={1} />
+    <SelectStyle mode='light' />
   </React.StrictMode>
 );
 
