@@ -2,12 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SelectStyle from "./SelectStyle";
+import TitledPanel from "./TitledPanel";
+import ListTemplate from "./ListTemplate";
+import books from "./books";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SelectStyle mode='light' />
+    <TitledPanel>
+      <p key="title">メンバー募集</p>
+      <p key="body">ようこそ、プロジェクトへ</p>
+    </TitledPanel>
+    <ListTemplate src={books}>
+      {elem => (
+          <>
+            <dt>
+              <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg}`}>
+                {elem.title} ({elem.price}円)
+              </a>
+            </dt>
+            <dd>{elem.summary}</dd>
+          </>
+      )}
+    </ListTemplate>
   </React.StrictMode>
 );
 
