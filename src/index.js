@@ -6,6 +6,7 @@ import TitledPanel from "./TitledPanel";
 import ListTemplate from "./ListTemplate";
 import books from "./books";
 import MyHello from "./MyHello";
+import StateBasic from "./StateBasic";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,7 @@ root.render(
           </>
       )}
     </ListTemplate>
+    <StateBasic init={0} />
   </React.StrictMode>
 );
 
