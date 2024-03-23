@@ -7,6 +7,7 @@ import ListTemplate from "./ListTemplate";
 import books from "./books";
 import MyHello from "./MyHello";
 import StateBasic from "./StateBasic";
+import StateParent from "./StateParent";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +31,7 @@ root.render(
       )}
     </ListTemplate>
     <StateBasic init={0} />
+    <StateParent />
   </React.StrictMode>
 );
 
