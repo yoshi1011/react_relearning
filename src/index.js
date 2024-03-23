@@ -8,6 +8,7 @@ import books from "./books";
 import MyHello from "./MyHello";
 import StateBasic from "./StateBasic";
 import StateParent from "./StateParent";
+import EventMouse from "./EventMouse";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,6 +33,7 @@ root.render(
     </ListTemplate>
     <StateBasic init={0} />
     <StateParent />
+    <EventMouse alt='ロゴ画像' beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif" afterSrc="https://www.web-deli.com/image/home_chara.gif" />
   </React.StrictMode>
 );
 
