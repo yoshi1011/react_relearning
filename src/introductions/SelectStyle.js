@@ -1,4 +1,4 @@
-import './css/SelectStyle.css'
+import '../css/SelectStyle.css'
 import cn from 'classnames'
 
 export default function SelectStyle({mode}) {
