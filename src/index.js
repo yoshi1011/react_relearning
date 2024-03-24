@@ -6,6 +6,7 @@ import StateForm from "./basic/StateForm";
 import StateFormUC from "./basic/StateFormUC";
 import FormList from "./basic/FormList";
 import FormCheckMulti from "./basic/FormCheckMulti";
+import FormFile from "./basic/FormFile";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <StateFormUC />
       <FormList />
       <FormCheckMulti />
+      <FormFile />
     </React.StrictMode>
 );
 
