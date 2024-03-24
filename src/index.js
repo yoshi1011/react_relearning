@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StateForm from "./basic/StateForm";
 import StateFormUC from "./basic/StateFormUC";
+import FormList from "./basic/FormList";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
       <StateForm />
       <StateFormUC />
+      <FormList />
     </React.StrictMode>
 );
 
