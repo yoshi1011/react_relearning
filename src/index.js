@@ -8,6 +8,8 @@ import FormList from "./basic/FormList";
 import FormCheckMulti from "./basic/FormCheckMulti";
 import FormFile from "./basic/FormFile";
 import StateNest from "./basic/StateNest";
+import StateNestImmer from "./basic/StateNestImmer";
+import StateNestImmer2 from "./basic/StateNestImmer2";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +20,8 @@ root.render(
       <FormCheckMulti/>
       <FormFile/>
       <StateNest/>
+      <StateNestImmer/>
+      <StateNestImmer2/>
     </React.StrictMode>
 );
 

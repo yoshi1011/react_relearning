@@ -1,7 +1,7 @@
-import {useState} from "react";
+import {useImmer} from "use-immer";
 
-export default function StateNest() {
-  const [form, setForm] = useState({
+export default function StateNestImmer() {
+  const [form, setForm] = useImmer({
     name: '山田太郎',
     address: {
       prefecture: '広島県',
@@ -10,19 +10,14 @@ export default function StateNest() {
   });
 
   const handleForm = e => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
-    });
+    setForm(form => {
+      form[e.target.name] = e.target.value;
+    })
   }
 
   const handleFormNest = e => {
-    setForm({
-      ...form,
-      address: {
-        ...form.address,
-        [e.target.name]: e.target.value
-      }
+    setForm(form => {
+      form.address[e.target.name] = e.target.value;
     })
   }
 
