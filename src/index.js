@@ -7,15 +7,17 @@ import StateFormUC from "./basic/StateFormUC";
 import FormList from "./basic/FormList";
 import FormCheckMulti from "./basic/FormCheckMulti";
 import FormFile from "./basic/FormFile";
+import StateNest from "./basic/StateNest";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-      <StateForm />
-      <StateFormUC />
-      <FormList />
-      <FormCheckMulti />
-      <FormFile />
+      <StateForm/>
+      <StateFormUC/>
+      <FormList/>
+      <FormCheckMulti/>
+      <FormFile/>
+      <StateNest/>
     </React.StrictMode>
 );
 
