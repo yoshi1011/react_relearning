@@ -2,34 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StateForm from "./basic/StateForm";
-import StateFormUC from "./basic/StateFormUC";
-import FormList from "./basic/FormList";
-import FormCheckMulti from "./basic/FormCheckMulti";
-import FormFile from "./basic/FormFile";
-import StateNest from "./basic/StateNest";
-import StateNestImmer from "./basic/StateNestImmer";
-import StateNestImmer2 from "./basic/StateNestImmer2";
-import StateTodo from "./basic/StateTodo";
-import FormBasic from "./basic/FormBasic";
-import FormYup from "./basic/FormYup";
-import FormJapan from "./basic/FormJapan";
+import LazyBasic from "./componentDev/LazyBasic";
+import LazyMulti from "./componentDev/LazyMulti";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <StateForm/>
-        <StateFormUC/>
-        <FormList/>
-        <FormCheckMulti/>
-        <FormFile/>
-        <StateNest/>
-        <StateNestImmer/>
-        <StateNestImmer2/>
-        <StateTodo/>
-        <FormBasic/>
-        <FormYup/>
-        <FormJapan/>
+        <LazyBasic />
+        <LazyMulti />
     </React.StrictMode>
 );
 
