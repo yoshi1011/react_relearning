@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StyledBasic from "./componentDev/StyledBasic";
 import StyleDynamic from "./componentDev/StyleDynamic";
+import StyledComp from "./componentDev/StyledComp";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
             radius: true,
             color: 'royalblue'
         }} />
+        <StyledComp/>
     </React.StrictMode>
 );
 
