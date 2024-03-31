@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ProfilerBasic from "./componentDev/ProfilerBasic";
+import StyledBasic from "./componentDev/StyledBasic";
+import StyleDynamic from "./componentDev/StyleDynamic";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <ProfilerBasic/>
+        <h3>StyledJSXの基本</h3>
+        <StyledBasic/>
+        <StyleDynamic theme={{
+            radius: true,
+            color: 'royalblue'
+        }} />
     </React.StrictMode>
 );
 
