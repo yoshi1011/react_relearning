@@ -12,6 +12,8 @@ import StateNestImmer from "./basic/StateNestImmer";
 import StateNestImmer2 from "./basic/StateNestImmer2";
 import StateTodo from "./basic/StateTodo";
 import FormBasic from "./basic/FormBasic";
+import FormYup from "./basic/FormYup";
+import FormJapan from "./basic/FormJapan";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +28,8 @@ root.render(
         <StateNestImmer2/>
         <StateTodo/>
         <FormBasic/>
+        <FormYup/>
+        <FormJapan/>
     </React.StrictMode>
 );
 
