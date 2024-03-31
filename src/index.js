@@ -11,19 +11,21 @@ import StateNest from "./basic/StateNest";
 import StateNestImmer from "./basic/StateNestImmer";
 import StateNestImmer2 from "./basic/StateNestImmer2";
 import StateTodo from "./basic/StateTodo";
+import FormBasic from "./basic/FormBasic";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-      <StateForm/>
-      <StateFormUC/>
-      <FormList/>
-      <FormCheckMulti/>
-      <FormFile/>
-      <StateNest/>
-      <StateNestImmer/>
-      <StateNestImmer2/>
-      <StateTodo/>
+        <StateForm/>
+        <StateFormUC/>
+        <FormList/>
+        <FormCheckMulti/>
+        <FormFile/>
+        <StateNest/>
+        <StateNestImmer/>
+        <StateNestImmer2/>
+        <StateTodo/>
+        <FormBasic/>
     </React.StrictMode>
 );
 
