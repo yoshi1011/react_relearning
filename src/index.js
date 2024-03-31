@@ -10,6 +10,7 @@ import FormFile from "./basic/FormFile";
 import StateNest from "./basic/StateNest";
 import StateNestImmer from "./basic/StateNestImmer";
 import StateNestImmer2 from "./basic/StateNestImmer2";
+import StateTodo from "./basic/StateTodo";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
       <StateNest/>
       <StateNestImmer/>
       <StateNestImmer2/>
+      <StateTodo/>
     </React.StrictMode>
 );
 
