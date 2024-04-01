@@ -2,20 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StyledBasic from "./componentDev/StyledBasic";
-import StyleDynamic from "./componentDev/StyleDynamic";
-import StyledComp from "./componentDev/StyledComp";
+import PortalBasic from "./componentDev/PortalBasic";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <h3>StyledJSXの基本</h3>
-        <StyledBasic/>
-        <StyleDynamic theme={{
-            radius: true,
-            color: 'royalblue'
-        }} />
-        <StyledComp/>
+        <div id="dialog"></div>
+        <PortalBasic/>
     </React.StrictMode>
 );
 
