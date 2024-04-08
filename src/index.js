@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ErrorRetryRoot from "./componentDev/ErrorEventRoot";
+import MaterialBasic from "./reactLibrary/MaterialBasic";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <ErrorRetryRoot/>
+        <MaterialBasic/>
     </React.StrictMode>
 );
 
