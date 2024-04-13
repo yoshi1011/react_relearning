@@ -6,6 +6,7 @@ import MaterialBasic from "./reactLibrary/MaterialBasic";
 import MaterialDrawer from "./reactLibrary/MaterialDrawer";
 import {ThemeProvider} from "@mui/material";
 import theme from "./reactLibrary/theme";
+import FormMui from "./reactLibrary/FormMui";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
         <ThemeProvider theme={theme}>
             <MaterialBasic/>
             <MaterialDrawer/>
+            <FormMui />
         </ThemeProvider>
     </React.StrictMode>
 );
