@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MaterialBasic from "./reactLibrary/MaterialBasic";
+import MaterialDrawer from "./reactLibrary/MaterialDrawer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <MaterialBasic/>
+        <MaterialDrawer />
     </React.StrictMode>
 );
 
