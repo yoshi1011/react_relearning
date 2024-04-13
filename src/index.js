@@ -4,12 +4,16 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MaterialBasic from "./reactLibrary/MaterialBasic";
 import MaterialDrawer from "./reactLibrary/MaterialDrawer";
+import {ThemeProvider} from "@mui/material";
+import theme from "./reactLibrary/theme";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <MaterialBasic/>
-        <MaterialDrawer />
+        <ThemeProvider theme={theme}>
+            <MaterialBasic/>
+            <MaterialDrawer/>
+        </ThemeProvider>
     </React.StrictMode>
 );
 
