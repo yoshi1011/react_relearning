@@ -16,7 +16,21 @@ export default {
             description: 'ボタンの大きさ'
         },
         handleClick: {action: 'clicked'}
-    }
+    },
+    // うまくいかない。おそらくbabelではなくswcを使うようインストールしてしまったため。
+    // decorators: [
+    //     Story => (
+    //         <div style={{
+    //             height: 150,
+    //             display: 'flex',
+    //             justifyContent: 'center',
+    //             alignItems: 'center',
+    //             backgroundColor: '#ccc'
+    //         }}>
+    //             <Story />
+    //         </div>
+    //     )
+    // ]
 }
 
 export const Default = {
