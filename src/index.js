@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -7,14 +7,32 @@ import MaterialDrawer from "./reactLibrary/MaterialDrawer";
 import {ThemeProvider} from "@mui/material";
 import theme from "./reactLibrary/theme";
 import FormMui from "./reactLibrary/FormMui";
+import {QueryClient, QueryClientProvider} from "react-query";
+import QueryBasic from "./reactLibrary/QueryBasic";
+import QuerySuspense from "./reactLibrary/QuerySuspense";
+import {ErrorBoundary} from "react-error-boundary";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const cli = new QueryClient({
+    defaultOptions: {
+        queries: {
+            suspense: true,
+        }
+    }
+})
 root.render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
             <MaterialBasic/>
             <MaterialDrawer/>
             <FormMui />
+            <Suspense fallback={<p>Loading...</p>}>
+                <ErrorBoundary fallback={<div>エラーが発生しました</div>}>
+                    <QueryClientProvider client={cli}>
+                        <QuerySuspense />
+                    </QueryClientProvider>
+                </ErrorBoundary>
+            </Suspense>
         </ThemeProvider>
     </React.StrictMode>
 );
