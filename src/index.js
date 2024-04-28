@@ -15,6 +15,7 @@ import HookContext from "./useHooks/HookContext";
 import MyThemeProvider from "./useHooks/MyThemeProvider";
 import HookThemeButton from "./useHooks/HookThemeButton";
 import HookMemo from "./useHooks/HookMemo";
+import HookTransition from "./useHooks/HookTransition";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +34,7 @@ root.render(
             <HookThemeButton/>
         </MyThemeProvider>
         <HookMemo/>
+        <HookTransition/>
     </React.StrictMode>
 );
 
