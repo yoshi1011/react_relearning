@@ -5,13 +5,19 @@ import reportWebVitals from './reportWebVitals';
 import StateEffect from "./useHooks/StateEffect";
 import HookTimer from "./useHooks/HookTimer";
 import HookEffect from "./useHooks/HookEffect";
+import HookRef from "./useHooks/HookRef";
+import HookRefForward from "./useHooks/HookRefForward";
+import HookCallbackRef from "./useHooks/HookCallbackRef";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <StateEffect init={0} />
-        <HookTimer init={10} />
-        <HookEffect init={10} />
+        <StateEffect init={0}/>
+        <HookTimer init={10}/>
+        <HookEffect init={10}/>
+        <HookRef/>
+        <HookRefForward/>
+        <HookCallbackRef/>
     </React.StrictMode>
 );
 
