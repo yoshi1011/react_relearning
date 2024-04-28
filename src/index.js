@@ -16,6 +16,8 @@ import MyThemeProvider from "./useHooks/MyThemeProvider";
 import HookThemeButton from "./useHooks/HookThemeButton";
 import HookMemo from "./useHooks/HookMemo";
 import HookTransition from "./useHooks/HookTransition";
+import HookDeferred from "./useHooks/HookDeferred";
+import HookDeferredTransition from "./useHooks/HookDeferredTransition";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,7 +36,9 @@ root.render(
             <HookThemeButton/>
         </MyThemeProvider>
         <HookMemo/>
-        <HookTransition/>
+        {/*<HookTransition/>*/}
+        {/*<HookDeferred/>*/}
+        <HookDeferredTransition/>
     </React.StrictMode>
 );
 
