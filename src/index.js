@@ -11,6 +11,9 @@ import HookCallbackRef from "./useHooks/HookCallbackRef";
 import HookReducer from "./useHooks/HookReducer";
 import HookReducerUp from "./useHooks/HookReducerUp";
 import HookReducerInit from "./useHooks/HookReducerInit";
+import HookContext from "./useHooks/HookContext";
+import MyThemeProvider from "./useHooks/MyThemeProvider";
+import HookThemeButton from "./useHooks/HookThemeButton";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +27,10 @@ root.render(
         <HookReducer init={0}/>
         <HookReducerUp init={0}/>
         <HookReducerInit init={0}/>
+        <HookContext/>
+        <MyThemeProvider>
+            <HookThemeButton/>
+        </MyThemeProvider>
     </React.StrictMode>
 );
 
