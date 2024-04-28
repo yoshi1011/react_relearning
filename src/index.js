@@ -8,6 +8,9 @@ import HookEffect from "./useHooks/HookEffect";
 import HookRef from "./useHooks/HookRef";
 import HookRefForward from "./useHooks/HookRefForward";
 import HookCallbackRef from "./useHooks/HookCallbackRef";
+import HookReducer from "./useHooks/HookReducer";
+import HookReducerUp from "./useHooks/HookReducerUp";
+import HookReducerInit from "./useHooks/HookReducerInit";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +21,9 @@ root.render(
         <HookRef/>
         <HookRefForward/>
         <HookCallbackRef/>
+        <HookReducer init={0}/>
+        <HookReducerUp init={0}/>
+        <HookReducerInit init={0}/>
     </React.StrictMode>
 );
 
