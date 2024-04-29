@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {RouterProvider} from "react-router-dom";
-import routesLink from "./routesLink";
+import routesParam from "./routing/routesParam";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={routesLink} />
+        <RouterProvider router={routesParam} />
     </React.StrictMode>
 );
 
