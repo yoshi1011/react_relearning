@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {RouterProvider} from "react-router-dom";
-import routesParam from "./routing/routesParam";
+import routesHandle from "./routing/routesHandle";
+import {HelmetProvider} from "react-helmet-async";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={routesParam} />
+        <HelmetProvider>
+            <RouterProvider router={routesHandle} />
+        </HelmetProvider>
     </React.StrictMode>
 );
 
