@@ -7,6 +7,10 @@ export default function BookPage() {
 
     const {title, summary} = books.find(b => isbn === b.isbn)
 
+    // if (!/978-4-[0-9]{2,7}-[0-9]{2,7}-[0-9X]/.test(isbn)) {
+    //     throw new RangeError('ISBN is invalid!')
+    // }
+
     return (
         <>
             <MyHeader title={title} keywords={title} description={summary}/>
